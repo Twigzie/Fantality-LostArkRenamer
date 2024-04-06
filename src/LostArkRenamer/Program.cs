@@ -43,7 +43,7 @@ namespace LostArkRenamer {
 
 #if DEBUG
                 args = new string[] {
-                    Path.Combine(Utils.Root, "1599341.txt"),
+                    "J:\\GitHub\\Fantality-LostArkRenamer\\files\\testList.txt",
                     "-r"
                 };
 #endif
