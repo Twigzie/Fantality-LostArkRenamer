@@ -7,8 +7,9 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 
  - LostArkRenamer.exe [ source_file ]
 	 > [**source_file**]: The source file to decrypt
-	 >> Example: **LostArkRenamer.exe "C:\Program Files (x86)\Steam\steamapps\common\Lost Ark\EFGame\ReleasePC\Packages\0G1MAN0P84NX8I1MZZESXGZ.upk"**
-	 >Output: ![](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
+	 >> Example: **LostArkRenamer.exe "(STEAM PATH)\Lost Ark\EFGame\ReleasePC\Packages\0G1MAN0P84NX8I1MZZESXGZ.upk"**
+	 >Output: 
+	 >![](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
                     
  - LostArkRenamer.exe [ source_file -r ]
 	> [ **source_file** ]: The source file containing a list of encrypted file or folder names.
