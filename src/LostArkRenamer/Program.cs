@@ -41,12 +41,12 @@ namespace LostArkRenamer {
                 Console.WriteLine(@"--------------------------------------------------------------------------------------------------");
                 Console.WriteLine();
 
-#if DEBUG
-                args = new string[] {
-                    Path.Combine(Utils.Root, "1599341.txt"),
-                    "-r"
-                };
-#endif
+//#if DEBUG
+//                args = new string[] {
+//                    Path.Combine(Utils.Root, "1599341.txt"),
+//                    "-r"
+//                };
+//#endif
 
                 if (args.Length == 0) {
 
