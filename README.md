@@ -19,7 +19,8 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 	 >***Output***: 
 	 >![](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_2.png)
 	 > NOTE: Only files that meet requirements are decrypted. As the above image shows, regular files and folders are shown as errors. Folders are errors cause the game only encrypts the files. I'll add support for folders later
-
+	 > NOTE: This will create a txt file in the programs directory called **export.txt** with all the decrypted names (if any)
+  > 
 # Not supported yet but working on it
 
  - LostArkRenamer.exe [ source_folder ]
