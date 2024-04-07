@@ -1,3 +1,4 @@
+
 # Fantality-LostArkRenamer
 [](https://github.com/Twigzie/Fantality-LostArkRenamer#fantality-lostarkrenamer)
 
@@ -12,17 +13,27 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 	 >![](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
                     
  - LostArkRenamer.exe [ source_file -r ]
-	> [ **source_file** ]: The source file containing a list of encrypted file or folder names.
-	> [ **-r** ]:\t\t The specified source contains an encrypted list of values that will be decrypted
+	 > [ **source_file** ]: The source file containing a list of encrypted file or folder names.
+	 >> [ **-r** ]: The specified source contains an encrypted [list](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/files/testList.txt) of values that will be decrypted
+	 
+	 > ***Example***: **LostArkRenamer.exe "(Path)/testList.txt" -r**
+	 >***Output***: 
+	 >![](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_2.png)
+
+> ***NOTE: Only files that meet requirements are decrypted. As the above image shows, regular files and folders are shown as errors. Folders are errors cause the game only encrypts the files. I'll add support for folders later.***
+
+> ***NOTE: This will create a txt file in the programs    directory called **export.txt** with all the decrypted names (if any)***
+	 
+# Not supported yet but working on it
 
  - LostArkRenamer.exe [ source_folder ]
-	 > [ **source_folder** ]: The source folder to decrypt                    
+	 > [ **source_folder** ]: The source folder to decrypt
 
  - LostArkRenamer.exe [ source_folder -r ]
 	 > [ **source_folder** ]: The source folder to decrypt
-	 > [ **-r** ]:  Performs a recursive search for the specified directory
+	 >> [ **-r** ]:  Performs a recursive search for the specified directory
                     
  - LostArkRenamer.exe [ source_folder -r -f ]
 	 > [ **source_folder** ]: The source folder to search and rename both folders and files.
-	 > [ **-r** ]: Performs a recursive search for the specified directory
-	 > [ **-f** ]: Performs a recursive search and also decrypts files
+	 >> [ **-r** ]: Performs a recursive search for the specified directory
+	 >> [ **-f** ]: Performs a recursive search and also decrypts files
