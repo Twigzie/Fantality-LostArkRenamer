@@ -41,12 +41,12 @@ namespace LostArkRenamer {
                 Console.WriteLine(@"--------------------------------------------------------------------------------------------------");
                 Console.WriteLine();
 
-#if DEBUG
-                args = new string[] {
-                    "J:\\GitHub\\Fantality-LostArkRenamer\\files\\testList.txt",
-                    "-r"
-                };
-#endif
+//#if DEBUG
+//                args = new string[] {
+//                    "J:\\GitHub\\Fantality-LostArkRenamer\\files\\testList.txt",
+//                    "-r"
+//                };
+//#endif
 
                 if (args.Length == 0) {
 
