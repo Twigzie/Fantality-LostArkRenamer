@@ -10,14 +10,14 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 > [ **source_file** ] *The source file to be decrypted*
 >
 > -  **Example:** `LostArkRenamer.exe "(PATH)\0G1MAN0P84NX8I1MZZESXGZ.upk"`
->   > ![Example_1](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
+> > ![Example_1](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
 
 **LostArkRenamer.exe** [ *source_file* *-r* ]
 > [ **source_file** ] *The source file to decrypt*
 > [ **-r** ] *The specified source contains an encrypted ([example](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/files/testList.txt)) list of values that will be decrypted*
 >
-	>-  **Example:** `LostArkRenamer.exe "(FOLDER)\0G1MAN0P84NX8I1MZZESXGZ.upk" -r`
-	>> ![Example_2](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_2.png)
+> -  **Example:** `LostArkRenamer.exe "(FOLDER)\0G1MAN0P84NX8I1MZZESXGZ.upk" -r`
+> > ![Example_2](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_2.png)
 
 ---
 
