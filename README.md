@@ -10,19 +10,6 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 > [ **source_file** ] *The source file to be decrypted*
 > -  **Example:** `LostArkRenamer.exe "(FOLDER)\0G1MAN0P84NX8I1MZZESXGZ.upk"`
 >
-<<<<<<< Updated upstream
-> -  **Example:** `LostArkRenamer.exe "(PATH)\0G1MAN0P84NX8I1MZZESXGZ.upk"`
-> > ![Example_1](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_1.png)
-
-**LostArkRenamer.exe** [ *source_file* *-r* ]
-> [ **source_file** ] *The source file to decrypt*
-> [ **-r** ] *The specified source contains an encrypted ([example](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/files/testList.txt)) list of values that will be decrypted*
->
-> -  **Example:** `LostArkRenamer.exe "(FOLDER)\0G1MAN0P84NX8I1MZZESXGZ.upk" -r`
-> > ![Example_2](https://github.com/Twigzie/Fantality-LostArkRenamer/blob/main/images/arg_2.png)
-
----
-=======
 > [ **source_folder** ] *The source folder to be decrypted*
 > -  **Example:** `LostArkRenamer.exe "(FOLDER)"`
 >
@@ -30,7 +17,6 @@ A tool that renames obfuscated Lost Ark 'File\Folder' names into readable values
 > -  **Example:** `LostArkRenamer.exe "(FOLDER)\0G1MAN0P84NX8I1MZZESXGZ.upk" "(FOLDER)"`
 >
 > **NOTE**: *Files and folders can also be dropped onto the executable*
->>>>>>> Stashed changes
 
 **LostArkRenamer.exe** [ *l* *source_list*  ]
 > [ **l** ] *The specified source contains an encrypted list of values that will be decrypted*
