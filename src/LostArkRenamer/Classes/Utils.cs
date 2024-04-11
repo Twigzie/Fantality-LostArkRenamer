@@ -20,8 +20,22 @@ namespace LostArkRenamer.Classes {
             get => Path.Combine(Root, "export.txt");
         }
 
+        public static bool IsArg(string source) {
+            return source.ToLower() == "l" ||
+                   source.ToLower() == "r";
+        }
         public static bool IsFile(string source) {
-            return string.IsNullOrEmpty(Path.GetExtension(source)) != true;
+            try {
+                var attributes = File.GetAttributes(source);
+                if ((attributes & FileAttributes.Directory) == FileAttributes.Directory)
+                    return false;
+                return true;
+            }
+            catch {
+                if (string.IsNullOrEmpty(Path.GetExtension(source)))
+                    return false;
+                return true;
+            }
         }
 
         public static void SetInfo(string result, bool title = true) {
