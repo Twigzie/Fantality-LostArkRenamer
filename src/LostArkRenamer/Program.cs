@@ -327,7 +327,7 @@ namespace LostArkRenamer {
                                 var inputTarget = entry.Replace(sourceName, inputSource);
 
                                 inputWriter.WriteLine(Environment.NewLine);
-                                inputWriter.WriteLine($"Source: {source}");
+                                inputWriter.WriteLine($"Source: {sourceName}");
                                 inputWriter.WriteLine($"Decrypted: {inputTarget}");
 
                                 Console.WriteLine();
