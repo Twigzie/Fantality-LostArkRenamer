@@ -13,17 +13,17 @@ namespace LostArkRenamer.Classes {
         public static string Root {
             get => Environment.CurrentDirectory;
         }
-
         public static string ErrorOutput {
             get => Path.Combine(Root, "error.txt");
-        }
-        public static string ExportInput {
-            get => Path.Combine(Root, "list.txt");
         }
         public static string ExportOutput {
             get => Path.Combine(Root, "export.txt");
         }
 
+        public static bool IsArg(string source) {
+            return source.ToLower() == "l" ||
+                   source.ToLower() == "r";
+        }
         public static bool IsFile(string source) {
             try {
                 var attributes = File.GetAttributes(source);
@@ -86,9 +86,19 @@ namespace LostArkRenamer.Classes {
             }
         }
 
-        public static IEnumerable<string> ReadFiles(string source) {
-            foreach (var entry in Directory.GetFiles(source, "*", SearchOption.AllDirectories)) {
-                yield return entry;
+        public static IEnumerable<string> ReadStrings(string source) {
+            foreach (var line in File.ReadAllLines(source)) {
+                yield return line;
+            }
+        }
+        public static IEnumerable<string> ReadFiles(string source, SearchOption search = SearchOption.TopDirectoryOnly) {
+            foreach (var directory in Directory.GetFiles(source, "*", search)) {
+                yield return directory;
+            }
+        }
+        public static IEnumerable<string> ReadDirectories(string source) {
+            foreach (var directory in Directory.GetDirectories(source)) {
+                yield return directory;
             }
         }
 
